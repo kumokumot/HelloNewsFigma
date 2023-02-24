@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="cd_more_actions">More actions</string>
+    <string name="cd_search_articles">Search Articles</string>
+
+    <!-- Home Screen -->
+    <string name="home_audio_section_title">Audio Stories</string>
+    <string name="home_more">MORE</string>
+    <string name="home_play_all">Play All</string>
+</resources>
