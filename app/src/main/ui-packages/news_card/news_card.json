@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "JGzrwYbTSB9m5i8v3ZNMRw",
     "node": "2:68",
-    "version": "3071721849",
+    "version": "3071801374",
     "component-id": "a16332a2083f994f3b51d4e24c8c30fc89342f21"
   },
   "default": "view=hero-item",
@@ -69,6 +69,7 @@
             "id": "top_level",
             "padding": "16.0",
             "border-radius": "24.0",
+            "tap-handler": "$on NewsCard tapped",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
@@ -252,6 +253,7 @@
               "bottom": "12.0"
             },
             "border-radius": "24.0",
+            "tap-handler": "$on NewsCard tapped",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
@@ -437,6 +439,7 @@
             "id": "top_level",
             "padding": "12.0",
             "border-radius": "24.0",
+            "tap-handler": "$on NewsCard tapped",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "shrink"
@@ -627,6 +630,7 @@
           },
           {
             "id": "menu",
+            "tap-handler": "$on menu tapped",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -662,6 +666,7 @@
             "id": "top_level",
             "padding": "16.0",
             "border-radius": "24.0",
+            "tap-handler": "$on NewsCard tapped",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
@@ -837,6 +842,11 @@
     }
   },
   "parameters": {
+    "on NewsCard tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
     "thumbnail": {
       "data-type": "image",
       "required": false,
@@ -854,6 +864,11 @@
     },
     "date": {
       "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "on menu tapped": {
+      "data-type": "void-callback",
       "required": false,
       "description": ""
     }

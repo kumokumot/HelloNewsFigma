@@ -209,6 +209,8 @@ private fun PostListArticleStories(
             headline = postTop.title,
             author = postTop.metadata.author.name,
             date = postTop.metadata.date,
+            onNewsCardTapped = createOnTapped("Card Tapped", postTop.title),
+            onMenuTapped = {},
             view = View.HeroItem
         )
         Spacer(modifier = Modifier.size(12.dp))
