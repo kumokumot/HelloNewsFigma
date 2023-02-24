@@ -38,6 +38,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.hellonews.data.posts
 import com.example.hellonews.model.Post
+import com.example.hellonews.newscard.NewsCard
+import com.example.hellonews.newscard.View
 import com.example.hellonews.ui.theme.NewsTheme
 
 /**
@@ -202,13 +204,23 @@ private fun PostListArticleStories(
     ) {
 
         Spacer(modifier = Modifier.size(12.dp))
-        // Replace this text with hero card variant
-        Text(postTop.title)
+        NewsCard(
+            thumbnail = painterResource(postTop.imageId),
+            headline = postTop.title,
+            author = postTop.metadata.author.name,
+            date = postTop.metadata.date,
+            view = View.HeroItem
+        )
         Spacer(modifier = Modifier.size(12.dp))
 
         posts.forEach { post ->
-            // Replace this text with article card variant
-            Text(post.title)
+            NewsCard(
+                thumbnail = painterResource(post.imageId),
+                headline = post.title,
+                author = post.metadata.author.name,
+                date = post.metadata.date,
+                view = View.ArticleItem
+            )
             Spacer(modifier = Modifier.size(12.dp))
         }
     }
@@ -270,8 +282,13 @@ private fun PostListAudioStories(
         modifier = Modifier.padding(start = 16.dp, end = 16.dp)
     ) {
         posts.forEach { post ->
-            // Replace this text with audio card variant
-            Text(post.title)
+            NewsCard(
+                thumbnail = painterResource(post.imageId),
+                headline = post.title,
+                author = post.metadata.author.name,
+                date = post.metadata.date,
+                view = View.AudioItem
+            )
             Spacer(modifier = Modifier.size(12.dp))
         }
     }
