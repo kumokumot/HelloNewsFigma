@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "JGzrwYbTSB9m5i8v3ZNMRw",
     "node": "2:68",
-    "version": "3071551292",
+    "version": "3071721849",
     "component-id": "a16332a2083f994f3b51d4e24c8c30fc89342f21"
   },
   "default": "view=hero-item",
@@ -123,7 +123,7 @@
                 "value": "158.0"
               }
             },
-            "image-content": "thumbnail.jpeg",
+            "image-content": "$thumbnail",
             "scale": "cover"
           },
           {
@@ -164,7 +164,7 @@
               "saturation": "0.0",
               "value": "1.0"
             },
-            "text-content": "The Wonderful Architectures of This Winter Season",
+            "text-content": "$headline",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
@@ -207,7 +207,7 @@
               "saturation": "0.0",
               "value": "0.9058823529411765"
             },
-            "text-content": "The Seasonal Sagas",
+            "text-content": "$author",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
@@ -231,7 +231,7 @@
               "saturation": "0.0",
               "value": "0.9058823529411765"
             },
-            "text-content": "August 25, 2021",
+            "text-content": "$date",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
@@ -348,7 +348,7 @@
                 "value": "68.0"
               }
             },
-            "image-content": "thumbnail1.png",
+            "image-content": "$thumbnail",
             "scale": "cover"
           },
           {
@@ -369,7 +369,7 @@
               "saturation": "0.0",
               "value": "1.0"
             },
-            "text-content": "The New Method to Making Breakfast Crepes",
+            "text-content": "$headline",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
@@ -405,7 +405,7 @@
               "saturation": "0.0",
               "value": "1.0"
             },
-            "text-content": "Morning Break",
+            "text-content": "$author",
             "overflow": "visible",
             "text-align": "left",
             "text-align-vertical": "bottom",
@@ -421,7 +421,7 @@
               "saturation": "0.0",
               "value": "0.8431372549019608"
             },
-            "text-content": "November 10, 2021",
+            "text-content": "$date",
             "overflow": "visible",
             "text-align": "left",
             "text-align-vertical": "bottom",
@@ -553,7 +553,7 @@
                 "value": "66.0"
               }
             },
-            "image-content": "thumbnail2.png",
+            "image-content": "$thumbnail",
             "scale": "cover"
           },
           {
@@ -574,7 +574,7 @@
               "saturation": "0.0",
               "value": "1.0"
             },
-            "text-content": "Wondering Hour: A Childhood Story, Grizzly Bears, and A Sunset in the Distance",
+            "text-content": "$headline",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
@@ -599,7 +599,7 @@
               "saturation": "0.0",
               "value": "1.0"
             },
-            "text-content": "The Bees",
+            "text-content": "$author",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
@@ -648,7 +648,7 @@
               "saturation": "0.0",
               "value": "0.9058823529411765"
             },
-            "text-content": "4 hours ago",
+            "text-content": "$date",
             "overflow": "visible",
             "text-align": "left",
             "letter-spacing": "0.25",
@@ -716,7 +716,7 @@
                 "value": "158.0"
               }
             },
-            "image-content": "thumbnail.jpeg",
+            "image-content": "$thumbnail",
             "scale": "cover"
           },
           {
@@ -757,7 +757,7 @@
               "saturation": "0.0",
               "value": "1.0"
             },
-            "text-content": "The Wonderful Architectures of This Winter Season",
+            "text-content": "$headline",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
@@ -800,7 +800,7 @@
               "saturation": "0.0",
               "value": "0.9058823529411765"
             },
-            "text-content": "The Seasonal Sagas",
+            "text-content": "$author",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
@@ -824,7 +824,7 @@
               "saturation": "0.0",
               "value": "0.9058823529411765"
             },
-            "text-content": "August 25, 2021",
+            "text-content": "$date",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
@@ -836,12 +836,40 @@
       }
     }
   },
+  "parameters": {
+    "thumbnail": {
+      "data-type": "image",
+      "required": false,
+      "description": ""
+    },
+    "headline": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "author": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "date": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
   "previews": [
     {
       "design": "view=hero-item",
       "size": {
         "width": 354.0,
         "height": 306.0
+      },
+      "parameters": {
+        "thumbnail": "thumbnail.jpeg",
+        "headline": "The Wonderful Architectures of This Winter Season",
+        "author": "The Seasonal Sagas",
+        "date": "August 25, 2021"
       }
     },
     {
@@ -849,6 +877,12 @@
       "size": {
         "width": 354.0,
         "height": 92.0
+      },
+      "parameters": {
+        "thumbnail": "thumbnail1.png",
+        "headline": "The New Method to Making Breakfast Crepes",
+        "author": "Morning Break",
+        "date": "November 10, 2021"
       }
     },
     {
@@ -856,6 +890,12 @@
       "size": {
         "width": 353.0,
         "height": 160.0
+      },
+      "parameters": {
+        "thumbnail": "thumbnail2.png",
+        "headline": "Wondering Hour: A Childhood Story, Grizzly Bears, and A Sunset in the Distance",
+        "author": "The Bees",
+        "date": "4 hours ago"
       }
     },
     {
@@ -863,6 +903,12 @@
       "size": {
         "width": 354.0,
         "height": 306.0
+      },
+      "parameters": {
+        "thumbnail": "thumbnail.jpeg",
+        "headline": "The Wonderful Architectures of This Winter Season",
+        "author": "The Seasonal Sagas",
+        "date": "August 25, 2021"
       }
     }
   ],
